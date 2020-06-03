@@ -46,10 +46,10 @@ def play_or_exit(status = None):
         status = input("Type \"play\" to play the game, \"exit\" to quit: ")
         if status == "exit":
             exit()
+    return True
 
 def main():
-    while True:
-        play_or_exit()
+    while play_or_exit():
         hangman()
 
 if __name__ == "__main__":
